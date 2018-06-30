@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import eventsActions from '../../actions/eventsActions';
 
@@ -37,18 +38,20 @@ class EventList extends React.Component {
             <div>参加イベント一覧</div>
           </div>
           <div className="eventList--content">
-            <div className="eventList--content--item">
-              <div className="eventList--content--item--title">
-                <img src="/eventHeader.jpg" />
-              </div>
-              <div className="eventList--content--item--description">
-                <div>はじめての勉強会 #30 @shibuya</div>
-                <div className="eventList--content--item--description--participant">
-                  <img src="/peopleicon.png" />
-                  <div>20</div>
+            <Link to="/events/1/page">
+              <div className="eventList--content--item">
+                <div className="eventList--content--item--title">
+                  <img src="/eventHeader.jpg" />
+                </div>
+                <div className="eventList--content--item--description">
+                  <div>はじめての勉強会 #30 @shibuya</div>
+                  <div className="eventList--content--item--description--participant">
+                    <img src="/peopleicon.png" />
+                    <div>20</div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
             <div className="eventList--content--item">
               <div className="eventList--content--item--title">
                 <img src="/eventHeader.jpg" />
