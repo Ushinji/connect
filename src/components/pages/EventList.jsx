@@ -23,14 +23,61 @@ class EventList extends React.Component {
   }
 
   render() {
-    // const { events } = this.props;
     const { count } = this.state;
     return (
       <div>
-        <div className="test">ほげえええええええええええ</div>
-        <button onClick={this.handleClick}>ぼたん</button>
-        <div>{count}</div>
-        {/* <div>{events.map(p => <div>{p.name}</div>)}</div> */}
+        <div className="header">
+          <div className="header--description">
+            イベントで話したい仲間を探そう
+          </div>
+          <div className="header--title">Connect</div>
+        </div>
+        <div className="eventList">
+          <div className="eventList--title">
+            <div>参加イベント一覧</div>
+          </div>
+          <div className="eventList--content">
+            <div className="eventList--content--item">
+              <div className="eventList--content--item--title">
+                <img src="/eventHeader.jpg" />
+              </div>
+              <div className="eventList--content--item--description">
+                <div>はじめての勉強会 #30 @shibuya</div>
+                <div className="eventList--content--item--description--participant">
+                  <img src="/peopleicon.png" />
+                  <div>20</div>
+                </div>
+              </div>
+            </div>
+            <div className="eventList--content--item">
+              <div className="eventList--content--item--title">
+                <img src="/eventHeader.jpg" />
+              </div>
+              <div className="eventList--content--item--description">
+                <div>はじめての勉強会 #30 @shibuya</div>
+                <div className="eventList--content--item--description--participant">
+                  <img src="/peopleicon.png" />
+                  <div>20</div>
+                </div>
+              </div>
+            </div>
+            <div className="eventList--content--item">
+              <div className="eventList--content--item--title">
+                <img src="/eventHeader.jpg" />
+              </div>
+              <div className="eventList--content--item--description">
+                <div>はじめての勉強会 #30 @shibuya</div>
+                <div className="eventList--content--item--description--participant">
+                  <img src="/peopleicon.png" />
+                  <div>20</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button onClick={this.handleClick}>ぼたん</button>
+          <div>{count}</div>
+        </div>
       </div>
     );
   }

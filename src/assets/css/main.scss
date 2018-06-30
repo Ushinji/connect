@@ -1,3 +1,62 @@
-.test {
-  color: red;
+body {
+  margin: 0px;
+}
+
+.header {
+  padding: 24px;
+  background: #f32d6e;
+  &--description{
+    color: #ffff;
+    text-align: center;
+  }
+
+  &--title{
+    font-size: 32px;
+    color: #ffff;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+.eventList {
+  &--title {
+    padding: 30px;
+    font-size: 32px;
+    text-align: center;
+    color: #4F4F4F;
+  }
+  &--content {
+    padding: 24px;
+    &--item {
+      border: 1px solid #f32d6e;
+      margin-bottom: 24px;
+
+      &--title {
+        img {
+          width: 100%;
+        }
+      }
+      &--description {
+        color: #4F4F4F;
+        font-size: 28px;
+        padding: 24px 30px;
+        display: flex;
+        justify-content: space-between;
+        
+        &--participant {
+          display: flex;
+          color: black;
+          font-weight: 600;
+          vertical-align: buttom;
+
+          img {
+            height: 32px;
+            width: 32px;
+            padding-top: 4px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
 }
